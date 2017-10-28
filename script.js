@@ -11,6 +11,7 @@ $(".colorbox li").on("click",function(){
 });
 $(".money").on("click",function(){
 coins = (coins+clickcoin);
+  coins.cookie = coins
 $(".total").html(coins);
 });
 $(".BTCMprice").on("click",function(){
