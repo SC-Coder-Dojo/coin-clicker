@@ -1,5 +1,5 @@
 var coins = 0;
-if(coins.cookie != undifined) {
+if(coins.cookie != null) {
 coins.cookie = coins;
 }
 var BTCM_price = 10;
