@@ -1,4 +1,4 @@
-var coins.cookie = 0;
+var document.cookie = 0;
 var BTCM_price = 10;
 var clickcoin = 1;
 var bank_price = 100;
