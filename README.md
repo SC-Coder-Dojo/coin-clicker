@@ -1,2 +1,2 @@
-# coin-clicker
-this is a clicker game to play click this: https://SC-coder-dojo.github.io/coin-clicker/
+# coin clicker
+this is a clicker game, to play click this hyperlink: https://SC-coder-dojo.github.io/coin-clicker/
