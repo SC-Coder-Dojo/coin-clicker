@@ -10,6 +10,7 @@ $(".colorbox li").on("click",function(){
 });
 $(".money").on("click",function(){
 coins = (coins+clickcoin);
+  document.cookie = "coins=" + coins;
 $(".total").html(coins);
 });
 $(".BTCMprice").on("click",function(){
