@@ -1,4 +1,3 @@
-alert();
 var coins = document.cookie;
 var BTCM_price = 10;
 var clickcoin = 1;
