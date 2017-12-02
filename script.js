@@ -1,4 +1,4 @@
-var x = document.cookie;
+var x = 0;
 alert(x);
 var coins = 0;
 var BTCM_price = 10;
