@@ -1,4 +1,4 @@
-var coins = + document.cookie;
+var coins = 0;//+ document.cookie;
 if(coins == ""){coins = 0}
 var BTCM_price = 10;
 var clickcoin = 1;
