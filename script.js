@@ -1,4 +1,4 @@
-var coins = parseInt(document.cookie.value);
+var coins = document.cookie;
 var BTCM_price = 10;
 var clickcoin = 1;
 var bank_price = 100;
