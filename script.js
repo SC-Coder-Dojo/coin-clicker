@@ -1,7 +1,8 @@
 if(localStorage.getItem("coins") == null){
   var coins = 0;
 }else{
-  var coins = localStorage}
+  var coins = localStorage.getItem("coins");
+  }
 
 var BTCM_price = 10;
 var clickcoin = 1;
