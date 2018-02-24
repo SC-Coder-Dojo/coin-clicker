@@ -1,5 +1,5 @@
 var coins = localStorage.getItem("coins");
-if(coins == ""){
+if(coins == null){
   coins = 0;
 }
 
