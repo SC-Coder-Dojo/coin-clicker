@@ -1,4 +1,4 @@
-var coins = + document.cookie; //= "coins:"+coins+"expires=Thu, 18 Dec 2018 12:00:00 UTC";
+var coins = + document.cookie; = "coins:"+coins+"expires=Thu, 18 Dec 2018 12:00:00 UTC";
 if(coins == ""){coins = 0}
 var BTCM_price = 10;
 var clickcoin = 1;
