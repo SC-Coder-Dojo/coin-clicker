@@ -1,5 +1,8 @@
-var coins = + document.cookie; = "coins:"+coins+"expires=Thu, 18 Dec 2018 12:00:00 UTC";
-if(coins == ""){coins = 0}
+var coins = localStorage.getItem("coins");
+if(coins == ""){
+  coins = 0;
+}
+
 var BTCM_price = 10;
 var clickcoin = 1;
 var bank_price = 100;
@@ -11,7 +14,8 @@ $(".colorbox li").on("click",function(){
 });
 $(".money").on("click",function(){
   coins = coins + clickcoin;
-  document.cookie = coins;
+  localStorage.setItem("coins",coins);
+  //document.cookie = coins;
 $(".total").html(coins);
 });
 $(".BTCMprice").on("click",function(){
