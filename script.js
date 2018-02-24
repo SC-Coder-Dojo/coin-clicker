@@ -1,4 +1,4 @@
-var coins = localStorage.getItem("coins");
+var coins = +localStorage.getItem("coins");
 if(coins == null){
   coins = 0;
 }
