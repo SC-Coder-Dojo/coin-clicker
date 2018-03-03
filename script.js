@@ -19,7 +19,7 @@ $(".colorbox li").on("click",function(){
 $(".money").on("click",function(){
   coins = coins + clickcoin;
   localStorage.setItem("coins",coins);
-  //document.cookie = coins;
+  console.log("clicked", coins);
 $(".total").html(coins);
 });
 $(".BTCMprice").on("click",function(){
