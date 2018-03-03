@@ -4,7 +4,7 @@ if(localStorage.getItem("coins") == null){
   var coins = parseInt(localStorage.getItem("coins"));
   }
 if(localStorage.getItem("clickcoin") == null){
-  var clickcoin = 0;
+  var clickcoin = 1;
 }else{
   var clickcoin = parseInt(localStorage.getItem("clickcoin"));
   }
