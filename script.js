@@ -1,3 +1,7 @@
+function save() {
+    localStorage.setItem("coins",coins);
+  localStorage.setItem("clickcoin",clickcoin);
+}
 if(localStorage.getItem("coins") == null){
   var coins = 0;
 }else{
@@ -18,7 +22,7 @@ $(".colorbox li").on("click",function(){
 });
 $(".money").on("click",function(){
   coins = coins + clickcoin;
-  localStorage.setItem("coins",coins);
+  save();
   console.log("clicked", coins, clickcoin);
 $(".total").html(coins);
 });
@@ -27,6 +31,7 @@ $(".BTCMprice").on("click",function(){
     coins = (coins-BTCM_price);
     BTCM_price = parseFloat(BTCM_price*1.1).toFixed(2);
     clickcoin = (clickcoin+0.1);
+    save();
     $(".BTC_price_list").html(BTCM_price + "c");
   }
   $(".total_coins_per_click").html(clickcoin);
@@ -38,6 +43,7 @@ $(".bankprice").on("click",function(){
     bank_price = parseFloat(bank_price*1.1).toFixed(2);
     clickcoin = (clickcoin+1);
     $(".bank_price_list").html(bank_price + "c");
+    localStorage.setItem("coins",coins);
   }
   $(".total_coins_per_click").html(clickcoin);
   $(".total").html(coins);
@@ -48,6 +54,7 @@ $(".fast_foodPrice").on("click",function(){
     fast_food_price = parseFloat(fast_food_price*1.1).toFixed(2);
     clickcoin = (clickcoin+10);
     $(".fast_food_list").html(fast_food_price + "c");
+    localStorage.setItem("coins",coins);
   }
   $(".total_coins_per_click").html(clickcoin);
   $(".total").html(coins);
@@ -58,6 +65,7 @@ $(".software_price").on("click",function(){
     software_price = parseFloat(software_price*1.1).toFixed(2);
     clickcoin = (clickcoin+100);
     $(".software_list").html(software_price + "c");
+    localStorage.setItem("coins",coins);
   }
   $(".total_coins_per_click").html(clickcoin);
   $(".total").html(coins);
