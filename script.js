@@ -68,6 +68,9 @@ $(".software_price").on("click",function(){
     $(".software_list").html(software_price + "c");
     localStorage.setItem("coins",coins);
   }
+    $(".total_coins_per_click").html(clickcoin);
+  $(".total").html(coins);
+});
     $(".rental_price").on("click",function(){
   if (coins >= rental_price) {
     coins = (coins-rental_price);
