@@ -22,6 +22,7 @@ $(".colorbox li").on("click",function(){
 });
 $(".money").on("click",function(){
   coins = coins + clickcoin;
+    (money + "c");
   save();
   console.log("clicked", coins, clickcoin);
 $(".total").html(coins);
