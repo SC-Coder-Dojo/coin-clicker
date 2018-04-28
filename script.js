@@ -17,6 +17,7 @@ var bank_price = 100;
 var fast_food_price = 1000;
 var software_price = 10000;
 var rental_price = 100000;
+var sharehold_price = 1000000;
 $(".colorbox li").on("click",function(){
   var BC = $(this).css("background");
   $("body").css("background" ,BC);
@@ -77,6 +78,17 @@ $(".software_price").on("click",function(){
     rental_price = parseFloat(rental_price*1.1).toFixed(2);
     clickcoin = (clickcoin+1000);
     $(".rental_list").html(rental_price + "c");
+    localStorage.setItem("coins",coins);
+  }
+  $(".total_coins_per_click").html(clickcoin);
+  $(".total").html(coins);
+});
+ $(".share_hold_price").on("click",function(){
+  if (coins >= sharehold_price) {
+    coins = (coins-sharehold_price);
+    sharehold_price = parseFloat(sharehold_price*1.1).toFixed(2);
+    clickcoin = (clickcoin+10000);
+    $(".share_hold_list").html(share_hold_price + "c");
     localStorage.setItem("coins",coins);
   }
   $(".total_coins_per_click").html(clickcoin);
