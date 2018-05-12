@@ -88,7 +88,7 @@ $(".software_price").on("click",function(){
     coins = (coins-sharehold_price);
     sharehold_price = parseFloat(sharehold_price*1.1).toFixed(2);
     clickcoin = (clickcoin+10000);
-    $(".share_hold_list").html(share_hold_price + "c");
+    $(".share_hold_list").html(sharehold_price + "c");
     localStorage.setItem("coins",coins);
   }
   $(".total_coins_per_click").html(clickcoin);
