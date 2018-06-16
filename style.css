@@ -8,5 +8,5 @@ body {background: #ffffff
 .color4 {background-color: #f1c40f}
 .color5 {background-color: #ffffff}
 .img_holder{display: inline-block;}
-.titlegithub h1{}
-.titlegithub a{float:right; display: block;}
+.titlegithub {float:right}
+.titlegithub a{display: block;}
