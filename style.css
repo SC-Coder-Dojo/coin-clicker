@@ -9,4 +9,4 @@ body {background: #ffffff
 .color5 {background-color: #ffffff}
 .img_holder{display: inline-block;}
 .titlegithub h1{}
-.titlegithub a{float:right; display: inline-block;}
+.titlegithub a{float:right; display: block;}
