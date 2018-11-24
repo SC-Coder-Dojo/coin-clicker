@@ -2,6 +2,7 @@ function save() {
     localStorage.setItem("coins",coins);
     localStorage.setItem("clickcoin",clickcoin);
     localStorage.setItem("BTCM_price", BTCM_price);
+    localStorage.setItem("bank_price", bank_price);
 }
 if(localStorage.getItem("coins") == null){
   var coins = 0;
@@ -18,7 +19,11 @@ if(localStorage.getItem("BTCM_price") == null){
 }else{
   var BTCM_price = parseInt(localStorage.getItem("BTCM_price"));
   }
-var bank_price = 100;
+if(localStorage.getItem("bank_price") == null){
+  var bank_price = 100;
+}else{
+  var bank_price = parseInt(localStorage.getItem("bank_price"));
+  }
 var fast_food_price = 1000;
 var software_price = 10000;
 var rental_price = 100000;
