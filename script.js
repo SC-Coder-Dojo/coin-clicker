@@ -1,6 +1,7 @@
 function save() {
     localStorage.setItem("coins",coins);
-  localStorage.setItem("clickcoin",clickcoin);
+    localStorage.setItem("clickcoin",clickcoin);
+    localStorage.setItem("BTCM_price", BTCM_price);
 }
 if(localStorage.getItem("coins") == null){
   var coins = 0;
@@ -13,7 +14,7 @@ if(localStorage.getItem("clickcoin") == null){
   var clickcoin = parseInt(localStorage.getItem("clickcoin"));
   }
 if(localStorage.getItem("BTCM_price") == null){
-  var localStorage.getItem("BTCM_price") = 10;
+  var BTCM_price = 10;
 }else{
   var BTCM_price = parseInt(localStorage.getItem("BTCM_price"));
   }
