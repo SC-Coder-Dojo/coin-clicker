@@ -12,7 +12,11 @@ if(localStorage.getItem("clickcoin") == null){
 }else{
   var clickcoin = parseInt(localStorage.getItem("clickcoin"));
   }
-var BTCM_price = 10;
+if(localStorage.getItem("BTCM_price") == null){
+  var BTCM_price = 10;
+}else{
+  var BTCM_price = parseInt(localStorage.getItem("BTCM_price"));
+  }
 var bank_price = 100;
 var fast_food_price = 1000;
 var software_price = 10000;
