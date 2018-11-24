@@ -3,6 +3,10 @@ function save() {
     localStorage.setItem("clickcoin",clickcoin);
     localStorage.setItem("BTCM_price", BTCM_price);
     localStorage.setItem("bank_price", bank_price);
+    localStorage.setItem("fast_food_price", fast_food_price);
+    localStorage.setItem("software_price", software_price);
+    localStorage.setItem("rental_price", rental_price);
+    localStorage.setItem("sharehold_price", sharehold_price);
 }
 if(localStorage.getItem("coins") == null){
   var coins = 0;
@@ -24,10 +28,26 @@ if(localStorage.getItem("bank_price") == null){
 }else{
   var bank_price = parseInt(localStorage.getItem("bank_price"));
   }
-var fast_food_price = 1000;
-var software_price = 10000;
-var rental_price = 100000;
-var sharehold_price = 1000000;
+if(localStorage.getItem("fast_food_price") == null){
+  var fast_food_price = 100;
+}else{
+  var fast_food_price = parseInt(localStorage.getItem("fast_food_price"));
+  }
+if(localStorage.getItem("software_price") == null){
+  var software_price = 100;
+}else{
+  var software_price = parseInt(localStorage.getItem("software_price"));
+  }
+if(localStorage.getItem("rental_price") == null){
+  var rental_price = 100;
+}else{
+  var rental_price = parseInt(localStorage.getItem("rental_price"));
+  }
+if(localStorage.getItem("sharehold_price") == null){
+  var sharehold_price = 100;
+}else{
+  var sharehold_price = parseInt(localStorage.getItem("sharehold_price"));
+  }
 $(".colorbox li").on("click",function(){
   var BC = $(this).css("background");
   $("body").css("background" ,BC);
