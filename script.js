@@ -128,11 +128,6 @@ $(".software_price").on("click",function(){
 $(document).ready(() => {
 
 $(".total").html(coins);
-
-});
-
-$(document).ready(() => {
-
-$(".total").html(clickcoin);
+$(".total_coins_per_click").html(clickcoin);
 
 });
