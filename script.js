@@ -130,3 +130,9 @@ $(document).ready(() => {
 $(".total").html(coins);
 
 });
+
+$(document).ready(() => {
+
+$(".total").html(clickcoin);
+
+});
