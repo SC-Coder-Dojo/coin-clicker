@@ -124,3 +124,9 @@ $(".software_price").on("click",function(){
   $(".total_coins_per_click").html(clickcoin);
   $(".total").html(coins);
 });
+
+$(document).ready(() => {
+
+$(".total").html(coins);
+
+});
